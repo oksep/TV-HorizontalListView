@@ -164,7 +164,7 @@ public class HListView extends AdapterView<ListAdapter> {
             @Override
             public View getView(int position, View convertView, ViewGroup parent) {
                 TextView tv = new TextView(getContext());
-                // ((TextView) convertView).setGravity(GRAVITY_CENTER);
+                tv.setGravity(GRAVITY_CENTER);
                 tv.setBackgroundColor(0xff << 24 | new Random().nextInt(0xffffff));
                 tv.setText(getItem(position));
                 return tv;
