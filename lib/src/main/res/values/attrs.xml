@@ -4,13 +4,21 @@
     <attr name="HListViewStyle" format="reference"/>
 
     <declare-styleable name="HListView">
+        <!--item高度-->
         <attr name="item_height" format="dimension"/>
+        <!--item宽度-->
         <attr name="item_width" format="dimension"/>
+        <!--item获得焦点后缩放因子-->
         <attr name="item_scale_factor" format="float"/>
+        <!--缩放动画持续时间-->
         <attr name="item_scale_duration" format="integer"/>
+        <!--item之间的间距-->
         <attr name="spacing" format="dimension"/>
+        <!--控件滚动到最左侧溢出范围-->
         <attr name="left_offset" format="dimension"/>
+        <!--控件滚动到最右侧溢出范围-->
         <attr name="right_offset" format="dimension"/>
+        <!--item相对于HListView的Gravity-->
         <attr name="gravity" format="enum">
             <enum name="top" value="0"/>
             <enum name="center" value="1"/>
