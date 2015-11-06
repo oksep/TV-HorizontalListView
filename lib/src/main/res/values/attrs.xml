@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <attr name="HListViewStyle" format="reference"/>
+
+    <declare-styleable name="HListView">
+        <attr name="item_height" format="dimension"/>
+        <attr name="item_width" format="dimension"/>
+        <attr name="item_scale_factor" format="float"/>
+        <attr name="item_scale_duration" format="integer"/>
+        <attr name="spacing" format="dimension"/>
+        <attr name="left_offset" format="dimension"/>
+        <attr name="right_offset" format="dimension"/>
+        <attr name="gravity" format="enum">
+            <enum name="top" value="0"/>
+            <enum name="center" value="1"/>
+            <enum name="bottom" value="2"/>
+        </attr>
+        <attr name="bg_color" format="color"/>
+    </declare-styleable>
+
+</resources>
