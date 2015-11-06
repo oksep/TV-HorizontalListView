@@ -163,13 +163,11 @@ public class HListView extends AdapterView<ListAdapter> {
 
             @Override
             public View getView(int position, View convertView, ViewGroup parent) {
-                if (convertView == null) {
-                    convertView = new TextView(getContext());
-                    ((TextView) convertView).setGravity(GRAVITY_CENTER);
-                    convertView.setBackgroundColor(0xff << 24 | new Random().nextInt(0xffffff));
-                }
-                ((TextView) convertView).setText(getItem(position));
-                return convertView;
+                TextView tv = new TextView(getContext());
+                // ((TextView) convertView).setGravity(GRAVITY_CENTER);
+                tv.setBackgroundColor(0xff << 24 | new Random().nextInt(0xffffff));
+                tv.setText(getItem(position));
+                return tv;
             }
         };
         setAdapter(adapter);
